@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ENCABEZADO HOME **/
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+.pages-common {
+    text-align: center;
+    color: white;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    background-color: #223649;
+    padding:5px; 
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pages-common:hover{
+    background-color: #0056b3;
+}
+
+.header-common {
+    background-color: #223649;
+    padding: 10px 0;
+}
+
+.nav-common {
+    text-align: center;
+    padding:5px;
+    border-radius: 10px;
+}
+
+.nav-common a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.title-butterflies {
+    text-align: center;
+    color: white;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    background-color: #223649;
+    padding:5px; 
+    border-radius: 10px; 
+}
+
+.body-butterflies {
+    font-family: 'Roboto Condensed', serif;
+}
+
+body {
+    background-image: url("../IMG/fondo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.search-section,
+.advanced-search-container {
+    background-color: #223649;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h2,
+.advanced-search-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.filter {
+    flex: 1;
+    min-width: 200px;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #030f1b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.search-results {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+ 
+/* Estilos para footer*/
+
+.footer-common {
+    text-align: center;
+    color: white;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    background-color: #223649;
+    padding:5px; 
+    border-radius: 10px
+}
+
+.footer-content {
+    background-color: #223649;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.footer-common p {
+    margin: 0;
+    
+}
+
+.footer-common .footer-icons {
+    margin-top: 20px;
+}
+
+.footer-common.icons {
+    color: white;
+    margin: 0 5px;
+}
+
+.icons {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#symbol:hover {
+    transform: scale(2.1);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    #menu {
+        visibility: visible;
+    }
+    #label {
+        visibility: visible;
+    }
+    ul{
+        display: none;
+      }
+     
+      
+      input:checked  ~ ul{
+        display:block;
+      }
+      input {
+        display: none;
+       }
+       label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      li {
+        display: block;
+        background: lightgrey;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+      }
+      .filters {
+        display: contents;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .filter{
+        display: inline;
+    }
+    input[type="text"] {
+        display: block;
+    }
+    label {
+        display: contents;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+        ul {
+            display: flex;
+        }
+}
+
+

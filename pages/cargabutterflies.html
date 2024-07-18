@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('serve_css', filename='styles-cargabutterflies.css') }}">
+        <link rel="icon" href="../img/logo.ico">
+        <script src="https://kit.fontawesome.com/7500b894af.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Butterflies</title>
+        <script defer src="{{ url_for('serve_js', filename='fetchData.js') }}"></script>
+        <script defer src="{{ url_for('serve_js', filename='add_update_mariposas.js') }}"></script>
+    </head>
+<body class="body-contact">
+    <header class="header-common">
+        <nav class="nav-common">
+            <a class="pages-common" href="../index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="main-pages">
+        <div class="container-cargamariposas">
+            <h1 class="title-carga">Cargá tus mariposas!</h1>
+            <form class="form-carga" id="formularioCarga" method="post" action="/posts/">
+                <label for="nombre" class="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="especie" class="especie">Especie:</label>
+                <input type="text" id="especie" name="especie" required>
+                
+                <label for="familia" class="familia">Familia:</label>
+                <input type="text" id="familia" name="familia" required>
+                
+                <label for="nombreCientifico" class="nombreCientifico">Nombre Científico:</label>
+                <input type="text" id="nombreCientifico" name="nombreCientifico" required>
+                
+                <label for="pais" class="pais">País en el que se encuentra:</label>
+                <select id="pais" name="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <div class="radio-group">
+                    <label for="peligroExtincion" class="peligroExtincion">¿Es una especie en peligro de extinción?</label>
+                    <input type="checkbox" id="peligroExtincion" name="peligroExtincion">
+                </div>
+                <div class="radio-group">
+                    <label for="migratoria" class="migratoria">Migratoria</label>
+                    <input type="radio" id="migratoria" name="migratoria" value="migratoria">
+                </div>
+                
+                <input type="submit" id= "crear-botón" value="Enviar Mariposa" />
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer-common">
+        <div class="footer-content">
+            <p>&copy; 2024 - Fluttersearch</p>
+            <div class="footer-icons">
+                <a href="#" class="icons">
+                    <i id="symbol1" class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol2" class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol3" class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol4" class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol5" class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/fetchData.js"></script>
+    <script src="./js/add_update_mariposa.js"></script>
+
+
+</body>
+</html>

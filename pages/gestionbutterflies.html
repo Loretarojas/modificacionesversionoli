@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/styles-gestionbutterflies.css">
+        <link rel="icon" href="../img/logo.ico">
+        <script src="https://kit.fontawesome.com/7500b894af.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Gestión de Mariposas</title>
+        <script defer src="{{ url_for('serve_js', filename='fetchData.js') }}"></script>
+        <script defer src="{{ url_for('serve_js', filename='add_update_mariposas.js') }}"></script>
+    </head>
+    
+<body class="body-contact">
+    <header class="header-common">
+        <nav class="nav-common">
+            <a class="pages-common" href="../index.html">Home</a>
+        </nav>
+    </header>
+<body>
+
+    <main class="main-pages"> 
+        <div id="container-gestionmariposas">
+            <h1 class="title-carga">Base de datos de la comunidad</h1>
+            <div id="container-carga" class="container-carga">
+                <table id="container-tabla-carga">
+                    <tr id="encabezado-tabla">
+                        <th>Nombre</th>
+                        <th>Especie</th>
+                        <th>Familia</th>
+                        <th>Nombre Científico</th>
+                        <th>País</th>
+                        <th>Peligro de Extinción</th>
+                        <th>Especie Migratoria</th>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="contenedor-boton-agregar">
+                <a href="cargabutterflies.html" class="boton-agregar">Agregar/Editar mariposas</a>
+             </div>
+        </div>
+
+       
+    </main>
+    
+    <footer class="footer-common">
+        <div class="footer-content">
+            <p>&copy; 2024 - Fluttersearch</p>
+            <div class="footer-icons">
+                <a href="#" class="icons">
+                    <i id="symbol1" class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol2" class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol3" class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol4" class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol5" class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+  
+    <script src="./js/fetchData.js"></script>
+    <script src="./js/add_update_mariposa.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ENCABEZADO HOME **/
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+.pages-common {
+    text-align: center;
+    color: white;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    background-color: #223649;
+    padding: 5px; 
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+.pages-common:hover {
+    background-color: #0056b3;
+}
+
+.header-common {
+    background-color: #223649;
+    padding: 10px 0;
+}
+
+.nav-common {
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.nav-common a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.body-about {
+    background-image: url("../IMG/fondo.jpeg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: 'Roboto Condensed', serif;
+} 
+
+.colaboradores-franja {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    margin-top: 50px;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+    flex-wrap: wrap;
+}
+
+.persona-container {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #223649;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.persona {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: #223649;
+    color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.persona img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.persona h3,
+.persona p {
+    margin: 0;
+}
+
+.persona h3 {
+    font-size: 16px;
+    color: white;
+}
+
+.persona p {
+    font-size: 14px;
+    color: white;
+}
+
+.nombre {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.descripcion {
+    font-size: 14px;
+    margin-top: 5px;
+    color: white;
+}
+
+.main-pages {
+    max-width: 1200px; /* Aumentar el ancho máximo para acomodar todas las tarjetas en una fila */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title-about {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #223649;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contenido-about {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    line-height: 1.5;
+    color: white;
+    background-color: #223649;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenido-imagen-aleatoria {
+    text-align:center;
+    width: 500px;
+    display: flow-root;
+    margin-top: 50px;
+    line-height: 1.5;
+    color: white;
+    background-color: #223649;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 250px;
+    width: 60%;
+}
+
+.contenido-about-title {
+    text-align: center;
+}
+
+#picsum-image {
+    width: 300px;
+    height: 450px;
+}
+
+#change-image-btn {
+        border-radius: 7px;
+        color:#223649;
+        background-color: white;
+        font-family: 'Playfair Display', serif;
+        font-weight: bolder;
+        font-family: 'Playfair Display', serif;
+        padding-left: 13px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 13px;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+}
+
+/* Estilos para footer */
+.footer-common {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #223649;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.footer-content {
+    background-color: #223649;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.footer-common p {
+    margin: 0;
+}
+
+.footer-common .footer-icons {
+    margin-top: 20px;
+}
+
+.footer-common.icons {
+    color: white;
+    margin: 0 5px;
+}
+
+.icons {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#symbol:hover {
+    transform: scale(2.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .contenido-imagen-aleatoria {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 0px;
+    }
+
+    .contenido-about-title {
+        max-width: 50%;
+    }
+
+    #picsum-image {
+        max-width: 70%;
+    }
+
+    .colaboradores-franja {
+        overflow-x: auto;
+    }
+    .persona-container {
+        margin: 10px;
+    }
+    .main-pages {
+        padding: 10px;
+    }
+    .contenido-about {
+        padding: 10px;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 768px) {
+    ul {
+        display: flex;
+    }
+}

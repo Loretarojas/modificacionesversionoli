@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles-butterflies.css">
+    <link rel="icon" href="../img/logo.ico">
+    <script src="https://kit.fontawesome.com/7500b894af.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Butterflies</title>
+    <script defer src="../JS/butterflies.js"></script>
+</head>
+<body class="body-butterflies">
+    <header class="header-common">
+        <nav class="nav-common">
+          <a class="pages-common" href="../index.html">Home</a>
+        </nav>
+      </header>
+    <main class="main-pages">
+        <div class="container">
+            <h1 class="title-butterflies">Buscador de Mariposas</h1>
+            
+            <!-- Contenedor de la sección de búsqueda de mariposas por nombre -->
+            <div class="search-section">
+                <!-- Apartado de búsqueda de mariposas por nombre -->
+                <div class="section" id="mariposassim">
+                    <h2>Búsqueda por palabra</h2>
+                    <input type="text" id="butterfly-search-input" placeholder="Ingrese la palabra clave">
+                    <button id="butterfly-search-button">Buscar</button>
+                    <div id="butterfly-search-results" class="search-results"></div>
+                </div>
+            </div>
+            
+            <!-- Contenedor de la sección de búsqueda avanzada de mariposas -->
+            <div class="advanced-search-container">
+                <div class="section" id="mariposasadv">
+                    <div class="search-title">
+                        <h2>Búsqueda avanzada</h2>
+                    </div> 
+                    <div class="filters">
+
+                        <!-- Filtro de Familia del Insecto -->
+                        <div class="filter">
+                            <label for="familia-insecto">Familia del Insecto:</label>
+                            <input type="text" id="familia-insecto" placeholder="Ingrese la familia del insecto">
+                        </div>
+
+                        <!-- Filtro de Género del Insecto -->
+                        <div class="filter">
+                            <label for="genero-insecto">Género del Insecto:</label>
+                            <input type="text" id="genero-insecto" placeholder="Ingrese el género del insecto">
+                        </div>
+
+                        <!-- Filtro de Especie del Insecto -->
+                        <div class="filter">
+                            <label for="especie-insecto">Especie del Insecto:</label>
+                            <input type="text" id="especie-insecto" placeholder="Ingrese la especie del insecto">
+                        </div> 
+                        
+                        <!-- Filtro de Ubicación -->
+                        <div class="filter">
+                            <label for="ubicacion">Ubicación:</label>
+                            <input type="text" id="ubicacion" placeholder="Ingrese la ubicación">
+                        </div>
+                        
+                    </div>
+                    <button id="buscar-mariposas">Buscar</button>
+                    <div id="butterfly-results" class="results"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-common">
+        <div class="footer-content">
+            <p>&copy; 2024 - Fluttersearch</p>
+            <div class="footer-icons">
+                <a href="#" class="icons">
+                    <i id="symbol1" class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol2" class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol3" class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol4" class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i id="symbol5" class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
